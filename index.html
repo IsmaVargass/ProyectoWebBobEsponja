@@ -1,15 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="icon" href="img/icon.png" type="image/png" sizes="32x32">
-    <!--TODO: Es lo mismo al fin y al cabo / <link rel="shortcut icon" href="img/icon.png" type="image/x-icon"> -->
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio</title>
+  <link rel="icon" href="img/icon.png" type="image/png" sizes="32x32" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-    
+
+  <!-- NAV -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#personajes">Personajes</a></li>
+        <li><a href="#episodios">Episodios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#recetas">Recetas</a></li>
+        <li><a href="#simon">Simón Dice</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECCIONES -->
+  <section id="inicio" class="seccion animado">
+    <h1>¡Bienvenido al mundo de Bob Esponja!</h1>
+    <p>Explora Fondo de Bikini con tus personajes favoritos.</p>
+  </section>
+
+  <section id="personajes" class="seccion">
+    <h2>Personajes</h2>
+    <p>Aquí conocerás a Bob Esponja, Patricio, Calamardo y más.</p>
+  </section>
+
+  <section id="episodios" class="seccion">
+    <h2>Episodios</h2>
+    <p>Descubre una selección de los episodios más divertidos.</p>
+  </section>
+
+  <section id="galeria" class="seccion">
+    <h2>Galería</h2>
+  </section>
+
+  <section id="recetas" class="seccion">
+    <h2>Recetas</h2>
+    <p>Aprende a cocinar una Cangreburger... o al menos inténtalo.</p>
+  </section>
+
+  <section id="simon" class="seccion">
+    <h2>Simón Dice</h2>
+    <p>¡Prueba tu memoria con este mini juego de Bob Esponja!</p>
+    <div id="game-container">
+      <!-- Aquí irá el juego con JS -->
+    </div>
+  </section>
+
+  <section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo" required />
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
 </body>
 </html>
