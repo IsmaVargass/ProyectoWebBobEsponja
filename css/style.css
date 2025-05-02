@@ -10,40 +10,54 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  background-color: var(--gris-claro);
   color: var(--texto);
-  padding-top: 70px;
 }
 
-.navbar {
-  position: fixed;
+header {
+  .upperNav{
+
+    #bob1{
+      right: 5%;
+      position:absolute;
+    }
+    #pat1{
+      left: 5%;
+      position:absolute;
+    }
+    background-color: #5bcdd5;
+  }
+  
+}
+.navTool {
+  z-index: 100;
+  position: sticky;
   top: 0;
-  width: 100%;
+  ul{
+    margin: auto;
+    padding: 1%;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    a {
+      color: var(--texto);
+      text-decoration: none;
+    }
+    :hover{
+      color: #2e42a3;
+      background-color: #e7d537;
+    }
+  }
   background-color: var(--amarillo);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.navbar ul {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  list-style: none;
-  padding: 1rem;
-}
-
-.navbar a {
-  color: var(--texto);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  color: var(--morado);
+main {
+  background-color: #2196f3;
+  z-index: 10;
+  position: relative;
 }
