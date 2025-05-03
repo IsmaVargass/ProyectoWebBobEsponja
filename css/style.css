@@ -9,8 +9,18 @@
       --texto: #333;
 }
 
+/*Fuente Krabby Patty*/
+
+@font-face {
+  font-family: 'Krabby Patty';
+  src: url('/font/krabby_patty/Krabby\ Patty.ttf') format('truetype');
+  font-weight: 100;
+  font-style:normal;
+  font-display: swap;
+}
+
 * {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Krabby Patty', 'Arial', sans-serif;
 }
 
 body {
@@ -19,16 +29,21 @@ body {
 
 header {
   .upperNav{
-
+    /*Formato imagenes*/
+    #logo{
+      background-image: radial-gradient(#ffffff 10%, #049de0 70%);
+    }
     #bob1{
       right: 5%;
       position:absolute;
+      background-image: radial-gradient(#fbe959 30%, #049de0 75%);
     }
     #pat1{
       left: 5%;
       position:absolute;
+      background-image: radial-gradient(#f3aeb0 5%, #049de0 45%);
     }
-    background-color: #5bcdd5;
+    background-color: #049de0;
   }
   
 }

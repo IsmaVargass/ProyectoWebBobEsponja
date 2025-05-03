@@ -6,71 +6,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inicio</title>
   <link rel="icon" href="img/icon.png" type="image/png" sizes="32x32" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/bootstrap.css">
   <script defer src="js/script.js"></script>
 </head>
+
 <body>
   <div class="container-fluid px-0 mx-0">
     <header>
-        <div class="upperNav text-center">
-          <img class="img-fluid p-3 w-25" src="img/Logo.png" alt="Bob Esponja">
-          <img class="img-fluid p-3 w-25" id="bob1" src="/img/BE1.png" alt="Imagen Bob Esponja">
-          <img class="img-fluid p-3 w-25" id="pat1" src="/img/PatricioEstrella.webp" alt="Imagen Patricio">
-        </div>
-      </header>
-      
+      <div class="upperNav text-center">
+        <img class="img-fluid p-3 w-25" id="logo" src="img/Logo.png" alt="Bob Esponja">
+        <img class="img-fluid p-3 w-25" id="bob1" src="/img/BE1.png" alt="Imagen Bob Esponja">
+        <img class="img-fluid p-3 w-25" id="pat1" src="/img/PatricioEstrella.webp" alt="Imagen Patricio">
+      </div>
+    </header>
 
-      <!--Nav fuera para que funcione position sticky-->
-      <nav class="navTool text-center fw-medium">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#personajes">Personajes</a></li>
-          <li><a href="#episodios">Episodios</a></li>
-          <li><a href="#galeria">Galería</a></li>
-          <li><a href="#recetas">Recetas</a></li>
-          <li><a href="#simon">Simón Dice</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+    <!--Nav fuera para que funcione position sticky-->
+    <nav class="navTool text-center fw-medium">
+      <ul>
+        <li><a href="#inicio">Home</a></li>
+        <li><a href="#personajes">Characters</a></li>
+        <li><a href="#episodios">Episodes</a></li>
+        <li><a href="#galeria">Gallery</a></li>
+        <li><a href="#recetas">Recipes</a></li>
+        <li><a href="#simon">Symon says</a></li>
+        <li><a href="#contacto">Contact</a></li>
+      </ul>
+    </nav>
 
     <!-- SECCIONES -->
-    <main class="container-fluid px-0 mx-0">
-      <section id="inicio" class="seccion animado">
-        <h1>¡Bienvenido al mundo de Bob Esponja!</h1>
-        <p>Explora Fondo de Bikini con tus personajes favoritos.</p>
-      </section>
-      <section id="personajes" class="seccion">
-        <h2>Personajes</h2>
-        <p>Aquí conocerás a Bob Esponja, Patricio, Calamardo y más.</p>
-      </section>
-      <section id="episodios" class="seccion">
-        <h2>Episodios</h2>
-        <p>Descubre una selección de los episodios más divertidos.</p>
-      </section>
-      <section id="galeria" class="seccion">
-        <h2>Galería</h2>
-      </section>
-      <section id="recetas" class="seccion">
-        <h2>Recetas</h2>
-        <p>Aprende a cocinar una Cangreburger... o al menos inténtalo.</p>
-      </section>
-      <section id="simon" class="seccion">
-        <h2>Simón Dice</h2>
-        <p>¡Prueba tu memoria con este mini juego de Bob Esponja!</p>
-        <div id="game-container">
-          <!-- Aquí irá el juego con JS -->
-        </div>
-      </section>
-      <section id="contacto" class="seccion">
-        <h2>Contacto</h2>
-        <form>
-          <input type="text" placeholder="Nombre" required />
-          <input type="email" placeholder="Correo" required />
-          <textarea placeholder="Mensaje" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
+    <main>
+      <div class="row">
+        <section id="inicio" class="col-12 col-md-6 seccion animado">
+          <h1>Welcome to Bikinni Bottom!</h1>
+          <p>Explore this world with your favourite characters.</p>
+        </section>
+        
+        <section id="personajes" class=" col-12 col-md-6 seccion">
+          <h2>Characters</h2>
+          <p>Here you will meet SpongeBob, Patrick, Squidward and more.</p>
+        </section>
+        
+        <section id="episodios" class="col-12 col-md-6 seccion">
+          <h2>Episodes</h2>
+          <p>Discover a selection of the funniest episodes.</p>
+        </section>
+        
+        <section id="galeria" class="col-12 col-md-6 seccion">
+          <h2>Gallery</h2>
+        </section>
+        
+        <section id="recetas" class="col-12 col-md-6 seccion">
+          <h2>Recipes</h2>
+          <p>Learn to cook a Krabby Patty… or at least try.</p>
+        </section>
+        
+        <section id="simon" class="col-12 col-md-6 seccion">
+          <h2>Simon Says</h2>
+          <p>Test your memory with this SpongeBob mini-game!</p>
+          <div id="game-container">
+            <!-- The game will go here with JS -->
+          </div>
+        </section>
+      
+      
+        <section id="contacto" class="col-12 text-center seccion">
+          <h2>Contact</h2>
+          <form>
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="mail" required />
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </div>
     </main>
 </body>
 
