@@ -100,11 +100,11 @@ main {
 }
 
 .w1{
-  animation: w1 7s linear infinite;
+  animation: w1 10s linear infinite;
 }
 
 .w2 {
-  animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
+  animation: w2 9s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
   opacity: 0.5;
 }
 
