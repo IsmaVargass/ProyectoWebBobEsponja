@@ -35,6 +35,7 @@ header {
     }
     #bob1{
       right: 5%;
+      width: 20%;
       position:absolute;
       background-image: radial-gradient(#fbe959 30%, #049de0 75%);
     }
@@ -72,7 +73,64 @@ header {
 }
 
 main {
-  background-color: #2196f3;
+  background-color: #e4ecf3;
   z-index: 10;
   position: relative;
+
+}
+/*Animación*/
+.bg_color {
+  background-color: #2196f3;
+  height: 200px;
+  position: relative;
+  color: var(--amarillo);
+
+}
+.wave{
+  position: absolute;
+  z-index: -5;
+  width: 400%;
+  height: 100%;
+  top: 200px;
+  position: absolute;
+  background-size: 1600px auto;
+  background-image: url(/img/wd1.svg);
+  background-repeat: repeat-x;
+
+}
+
+.w1{
+  animation: w1 7s linear infinite;
+}
+
+.w2 {
+  animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
+  opacity: 0.5;
+}
+
+@keyframes w1 {
+  0%{
+    margin-left: 0;
+  }
+  100%{
+    margin-left: -1600px;
+  }
+}
+
+@keyframes w2 {
+  0%{
+    margin-left: 0;
+  }
+  100%{
+    margin-left: -1600px;
+  }
+}
+
+@keyframes desplazamiento{
+  0%, 100%{
+    transform: translateY(-25px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
 }

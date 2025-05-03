@@ -1,6 +1,6 @@
 "use strict"
 
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     // Programa la función para dentro de 3000 milisegundos (3 s)
     setTimeout(() => {
     const respuesta = confirm("¿Quieres estar informado de las novedades?");
@@ -10,4 +10,4 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('El usuario canceló');
     }
     }, 3000);
-});
+});*/
