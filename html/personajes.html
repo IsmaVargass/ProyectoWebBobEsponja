@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personajes</title>
+    <link rel="icon" href="../img/icon.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script defer src="../js/script.js"></script>
 </head>
+
 <body>
-    
+    <div class="container-fluid px-0 mx-0">
+        <header>
+            <div class="upperNav text-center">
+                <img class="img-fluid p-3 w-25" id="logo" src="../img/Logo.png" alt="Bob Esponja">
+                <img class="img-fluid p-3" id="bob1" src="../img/BE1.png" alt="Imagen Bob Esponja">
+                <img class="img-fluid p-3 w-25" id="pat1" src="../img/PatricioEstrella.webp" alt="Imagen Patricio">
+            </div>
+        </header>
+
+        <!--Nav fuera para que funcione position sticky-->
+        <nav class="navTool text-center fw-medium">
+            <ul>
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#personajes">Characters</a></li>
+                <li><a href="#episodios">Episodes</a></li>
+                <li><a href="#galeria">Gallery</a></li>
+                <li><a href="#recetas">Recipes</a></li>
+                <li><a href="#simon">Simon says</a></li>
+                <li><a href="#contacto">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1 class="display-1 text-center py-5">Characters</h1>
+
+            <section class="row">
+                <div class="col-6 mx-auto ">
+                    <h2 class="display-4" id="BE">SpongeBob</h2><br>
+                    <p class="fs-1">A cheerful, optimistic sea sponge who works as a fry cook at the Krusty Krab and
+                        loves jellyfishing and blowing bubbles</p>
+                </div>
+                <img src="../img/BE2.png" class="col-6 w-25 m-auto" alt="SpongeBob">
+            </section>
+
+            <section class="row my-5">
+                <img src="../img/PS.png" class="col-6 w-50 m-auto" alt="PatrickStar">
+                <div class="col-6 mx-auto">
+                    <h2 class="display-4" id="PS">Patrick Star</h2><br>
+                    <p class="fs-1">SpongeBob's best friend; a lovable, dim-witted starfish known for
+                        his simplicity and humorous cluelessness.</p>
+                </div>
+            </section>
+
+            <section class="row my-5">
+                <div class="col-6 mx-auto">************
+                    <h2 class="display-4" id="ST">Squidward Tentacles</h2><br>
+                    <p class="fs-1">A grumpy, cynical octopus and SpongeBob's neighbor. He enjoys playing 
+                        the clarinet and longs for a life of sophistication away from SpongeBob's antics</p>
+                </div>
+                <img src="../img/ST.png" class="ST col-6 w-50 m-auto" alt="Squidward">
+            </section>
+        </main>
+    </div>
 </body>
+
 </html>
