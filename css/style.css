@@ -21,11 +21,12 @@
 
 * {
   font-family: 'Krabby Patty', 'Arial', sans-serif;
-  color: var(--amarillo);
+  color: white;
 }
 
 body {
   color: var(--texto);
+  overflow-x: hidden;
 }
 
 header {
@@ -79,11 +80,13 @@ main {
   position: relative;
 
 }
+
 /*Animación*/
 .bg_color {
   background-color: #2196f3;
   height: 200px;
   position: relative;
+  color: var(--amarillo);
 
 }
 .wave{
@@ -133,21 +136,4 @@ main {
   50%{
     transform: translateY(10px);
   }
-}
-
-/*==========================Personajes================================*/
-#BE{
-  color: rgb(243, 243, 80);
-}
-
-#PS{
-  color: pink;
-}
-
-.ST {
-  transform: scaleX(-1);
-}
-
-#ST{
-  color: #bbdfd3;
 }
