@@ -50,6 +50,10 @@ header {
   }
   
 }
+#navtool{
+  transition: padding 0.3s ease, font-size 0.3s ease;
+
+}
 .navTool {
   z-index: 100;
   position: sticky;
@@ -67,11 +71,16 @@ header {
       text-decoration: none;
     }
     :hover{
-      color: #2e42a3;
-      background-color: #e7d537;
+      color: #5e74e2;
+      transform: scale(1.1);
+      transition: transform 0.15s ease;
+      display: inline;
     }
   }
   background-color: var(--amarillo);
+}
+.navtool-brand {
+  transition: font-size 0.3s ease;
 }
 
 main {
@@ -107,7 +116,7 @@ main {
 }
 
 .w2 {
-  animation: w2 9s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
+  animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
   opacity: 0.5;
 }
 
