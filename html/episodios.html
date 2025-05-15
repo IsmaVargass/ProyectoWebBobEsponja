@@ -1,76 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Episodios</title>
-    <link rel="icon" href="../img/icon.png" type="image/png" sizes="32x32" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/bootstrap.css" />
-    <script defer src="../js/bootstrap.js"></script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Episodios</title>
+  <link rel="icon" href="../img/icon.png" type="image/png" sizes="32x32" />
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/script.js"></script>
+  <script defer src="../js/bootstrap.js"></script>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 </head>
 
 <body>
-    <div class="container my-3">
+  <div class="container-fluid px-0 mx-0">
+    <!-- Header -->
+    <header class="upperNav text-center">
+      <img id="logo" class="img-fluid p-3 w-25" src="../img/Logo.png" alt="Bob Esponja">
+      <img id="bob1" class="img-fluid p-3" src="../img/BE1.png" alt="Bob Esponja">
+      <img id="pat1" class="img-fluid p-3 w-25" src="../img/PatricioEstrella.webp" alt="Patricio">
+    </header>
 
-        <div class="row my-3 justify-content-md-center">
+    <!-- Nav -->
+    <nav class="navTool" id="navtool">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../personajes.html">Characters</a></li>
+        <li><a href="episodios.html" class="active">Episodes</a></li>
+        <li><a href="../galeria.html">Gallery</a></li>
+        <li><a href="../recetas.html">Recipes</a></li>
+        <li><a href="../simon.html">Simon says</a></li>
+        <li><a href="../contacto.html">Contact</a></li>
+      </ul>
+    </nav>
 
-            <div class="rounded-4 col-4 text-center">
-                <img src="../img/Cap1.png" class=" w-75 img-thumbnail rounded-5 my-4" alt="..." />
+    <section id="episodios-hero" class="seccion fade-up text-center">
+      <div class="p-5">
+        <h1 class="display-1">Our Favourite Episodes</h1>
+        <p class="mt-4 h4 text-dark">Dive into Bikini Bottom’s best stories.</p>
+      </div>
+    </section>
 
-                <div class="card-body text-dark mt-5">
-                    <h5 class="card-title">The Secret Box/Band Geeks</h5>
-                    <p class="card-text shadow-none">
-                        Curiosity is killing Spongebob as he tries to invite out what is
-                        in the box that Patrick keeps with him: Squidward wants to form a
-                        marching band.
-                    </p>
-                    <button class="squishy squishy-candy">
-                        <i class="bi bi-bookmark-star-fill"></i>
-                        <span>Candy</span>
-                    </button>
-                </div>
+    <!-- Grid de episodios -->
+    <section class="container my-5">
+      <div class="row gy-4 justify-content-center">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4 fade-left">
+          <div class="card h-100 border-0 shadow">
+            <img src="../img/Cap1.png" class="card-img-top img-fluid rounded-4" alt="The Secret Box">
+            <div class="card-body text-dark">
+              <h5 class="card-title reveal-backwards">The Secret Box</h5>
+              <p class="card-text">
+                Curiosity is killing Spongebob as he tries to find out what Patrick
+                keeps in his secret box.
+              </p>
+              <button class="squishy squishy-candy">
+                <i class="bi bi-bookmark-star-fill"></i>
+                <span>Save</span>
+              </button>
             </div>
-            <div class="rounded-4 col-4 text-center">
-                <img src="../img/Cap1.png" class=" w-75 img-thumbnail rounded-5 my-4" alt="..." />
-
-                <div class="card-body text-dark mt-5">
-                    <h5 class="card-title">The Secret Box/Band Geeks</h5>
-                    <p class="card-text shadow-none">
-                        Curiosity is killing Spongebob as he tries to invite out what is
-                        in the box that Patrick keeps with him: Squidward wants to form a
-                        marching band.
-                    </p>
-                    <button class="squishy squishy-candy-yellow">
-                        <i class="bi bi-bookmark-star-fill"></i>
-                        <span>Candy</span>
-                    </button>
-                </div>
-            </div>
-            <div class="rounded-4 col-4 text-center">
-                <img src="../img/Cap1.png" class=" w-75 img-thumbnail rounded-5 my-4" alt="..." />
-
-                <div class="card-body text-dark mt-5">
-                    <h5 class="card-title">The Secret Box/Band Geeks</h5>
-                    <p class="card-text shadow-none">
-                        Curiosity is killing Spongebob as he tries to invite out what is
-                        in the box that Patrick keeps with him: Squidward wants to form a
-                        marching band.
-                    </p>
-                    <button class="squishy squishy-candy">
-                        <i class="bi bi-bookmark-star-fill"></i>
-                        <span>Candy</span>
-                    </button>
-                </div>
-            </div>
-
+          </div>
         </div>
 
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-4 fade-up">
+          <div class="card h-100 border-0 shadow">
+            <img src="../img/Cap1.png" class="card-img-top img-fluid rounded-4" alt="Band Geeks">
+            <div class="card-body text-dark">
+              <h5 class="card-title reveal-backwards">Band Geeks</h5>
+              <p class="card-text">
+                Squidward forms a marching band to impress his rival—Spongebob and
+                friends join the fun!
+              </p>
+              <button class="squishy squishy-candy-yellow">
+                <i class="bi bi-bookmark-star-fill"></i>
+                <span>Save</span>
+              </button>
+            </div>
+          </div>
+        </div>
 
-    </div>
+        <!-- Card 3 -->
+        <div class="col-12 col-md-6 col-lg-4 fade-right">
+          <div class="card h-100 border-0 shadow">
+            <img src="../img/Cap1.png" class="card-img-top img-fluid rounded-4" alt="Pizza Delivery">
+            <div class="card-body text-dark">
+              <h5 class="card-title reveal-backwards">Pizza Delivery</h5>
+              <p class="card-text">
+                Spongebob and Squidward’s epic pizza delivery across Jellyfish Fields.
+              </p>
+              <button class="squishy squishy-candy">
+                <i class="bi bi-bookmark-star-fill"></i>
+                <span>Save</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer (opcional) -->
+    <footer class="text-center py-4 bg-light">
+      <small class="text-muted">&copy; 2025 Bikini Bottom Fan Page</small>
+    </footer>
+  </div>
 </body>
 
 </html>
