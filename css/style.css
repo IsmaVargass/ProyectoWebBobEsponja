@@ -19,14 +19,49 @@
   font-display: swap;
 }
 
+h1 {
+  font-family: 'Krabby Patty', 'Arial', sans-serif;
+  color: var(--amarillo);
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
 * {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* p {
   font-family: 'Krabby Patty', 'Arial', sans-serif;
   color: whitesmoke;
+} */
+
+a {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  z-index: 10;
+  position: relative;
+
+  flex: 1;               
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;  
+  align-items: center;       
 }
 
 body {
   color: var(--texto);
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -90,14 +125,14 @@ main {
 
 }
 
-/*Animación*/
+
 .bg_color {
-  background-color: #2196f3;
   height: 200px;
   position: relative;
   color: var(--amarillo);
 
 }
+/* Animación
 .wave{
   position: absolute;
   z-index: -5;
@@ -145,7 +180,7 @@ main {
   50%{
     transform: translateY(10px);
   }
-}
+} */
 
 /*==========================Episodios================================*/
 .card-text {
