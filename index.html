@@ -9,21 +9,29 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css"/>
   <script defer src="js/script.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio</title>
+  <link rel="icon" href="img/icon.png" type="image/png" sizes="32x32" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css"/>
+  <script defer src="js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="container-fluid px-0 mx-0">
-    <header>
-      <div class="upperNav text-center">
-        <img class="img-fluid p-3 w-25" id="logo" src="img/Logo.png" alt="Bob Esponja">
-        <img class="img-fluid p-3" id="bob1" src="/img/BE1.png" alt="Imagen Bob Esponja">
-        <img class="img-fluid p-3 w-25" id="pat1" src="/img/PatricioEstrella.webp" alt="Imagen Patricio">
-      </div>
+    <header class="upperNav text-center">
+      <img class="img-fluid p-3 w-25" id="logo" src="img/Logo.png" alt="Bob Esponja">
+      <img class="img-fluid p-3" id="bob1" src="/img/BE1.png" alt="Imagen Bob Esponja">
+      <img class="img-fluid p-3 w-25" id="pat1" src="/img/PatricioEstrella.webp" alt="Imagen Patricio">
     </header>
 
-    <!-- Nav fuera para que funcione position sticky -->
-    <nav id="navtool" class="navTool text-center fw-medium">
-      <ul class="navtool-brand">
+    <!-- Nav fuera para sticky -->
+    <nav class="navTool" id="navtool">
+      <ul>
         <li><a href="#inicio">Home</a></li>
         <li><a href="#personajes">Characters</a></li>
         <li><a href="#episodios">Episodes</a></li>
@@ -36,56 +44,43 @@
 
     <!-- SECCIONES -->
     <main>
-      <div class="row">
-        <section id="inicio" class="col-12 text-center seccion animado">
-          <!-- Wave -->
-          <div class="bg_color p-5">
-            <h1 class="display-1">Welcome to Bikini Bottom!</h1>
-            <p class="mt-4 h4">Explore this world with your favourite characters.</p>
-          </div>
-          <div class="wave w1"></div>
-          <div class="wave w2"></div>
-        </section>
-      </div>
+      <section id="inicio" class="seccion  text-center">
+        <div class="p-5">
+          <h1 class="display-1 fade-up">Welcome to Bikini Bottom!</h1>
+          <p class="mt-4 h4 fade-up">Explore this world with your favourite characters.</p>
+        </div>
+      </section>
 
-      <div class="row">
-        <section id="personajes" class="col-12 col-md-6 seccion">
-          <h2>Characters</h2>
-          <a href="https://example.com/characters" class="btn">Ir a Characters</a>
-        </section>
-        <section id="episodios" class="col-12 col-md-6 seccion">
-          <h2>Episodes</h2>
-          <a href="https://example.com/episodes" class="btn">Ir a Episodes</a>
-        </section>
-      </div>
+      <section id="personajes" class="seccion fade-right reveal-backwards">
+        <h2>Characters</h2>
+        <a href="https://example.com/characters" class="btn">Ir a Characters</a>
+      </section>
 
-      <div class="row">
-        <section id="galeria" class="col-12 col-md-6 seccion">
-          <h2>Gallery</h2>
-          <a href="https://example.com/gallery" class="btn">Ir a Gallery</a>
-        </section>
-        <section id="recetas" class="col-12 col-md-6 seccion">
-          <h2>Recipes</h2>
-          <a href="https://example.com/recipes" class="btn">Ir a Recipes</a>
-        </section>
-      </div>
+      <section id="episodios" class="seccion fade-left">
+        <h2>Episodes</h2>
+        <a href="https://example.com/episodes" class="btn">Ir a Episodes</a>
+      </section>
 
-      <div class="row">
-        <section id="simon" class="col-12 col-md-6 seccion">
-          <h2>Simon Says</h2>
-          <div id="game-container">
-            <!-- The game will go here with JS -->
-          </div>
-          <a href="https://example.com/simon" class="btn">Jugar Simon Says</a>
-        </section>
-      </div>
+      <section id="galeria" class="seccion fade-right reveal-backwards">
+        <h2>Gallery</h2>
+        <a href="https://example.com/gallery" class="btn">Ir a Gallery</a>
+      </section>
 
-      <div class="row">
-        <section id="contacto" class="col-12 text-center seccion">
-          <h2>Contact</h2>
-          <a href="https://example.com/contact" class="btn">Contact Us</a>
-        </section>
-      </div>
+      <section id="recetas" class="seccion fade-left">
+        <h2>Recipes</h2>
+        <a href="https://example.com/recipes" class="btn">Ir a Recipes</a>
+      </section>
+
+      <section id="simon" class="seccion fade-right reveal-backwards">
+        <h2>Simon Says</h2>
+        <div id="game-container"></div>
+        <a href="https://example.com/simon" class="btn">Jugar Simon Says</a>
+      </section>
+
+      <section id="contacto" class="seccion fade-up text-center">
+        <h2>Contact</h2>
+        <a href="https://example.com/contact" class="btn">Contact Us</a>
+      </section>
     </main>
   </div>
 </body>
