@@ -1,11 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="icon" href="../img/icon.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../js/script.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    
+
+<body class="fondo-bg">
+    <div class="container-fluid px-0 mx-0">
+
+        <header class="upperNav text-center">
+            <a href="../index.html" id="fixed-logo" title="Inicio">
+                <img src="../img/Logo.png" alt="Logo Bob Esponja" />
+            </a>
+            <img id="logo" class="img-fluid p-3 w-25" src="../img/Logo.png" alt="Bob Esponja" />
+        </header>
+
+        <nav class="navTool text-center" id="navtool">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="personajes.html">Characters</a></li>
+                <li><a href="episodios.html">Episodes</a></li>
+                <li><a href="galeria.html">Gallery</a></li>
+                <li><a href="recetas.html">Recipes</a></li>
+                <li><a href="simondice.html">Simon says</a></li>
+                <li><a href="contacto.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="contacto" class="seccion ">
+                <div class="container py-5 fade-up">
+                    <h2 class="text-center mb-4">Contact us</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <form action="#" method="POST" class="glass-form p-4 border rounded">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name:</label>
+                                    <input type="text" class="form-control" id="name" name="name" required />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address:</label>
+                                    <input type="email" class="form-control" id="email" name="email" required />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject:</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message:</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5"
+                                        required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary px-4">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-grid fade-up">
+                <div class="footer-block about">
+                    <h5>Sobre Bikini Bottom</h5>
+                    <p>Bienvenido a la página no oficial de fanáticos de Bob Esponja, donde podrás explorar personajes,
+                        episodios, galerías y mucho más sobre el mundo submarino más divertido.</p>
+                </div>
+                <div class="footer-block links">
+                    <h5>Enlaces</h5>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="personajes.html">Personajes</a></li>
+                        <li><a href="episodios.html">Episodios</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="recetas.html">Recetas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block contact">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><i class="bi bi-envelope-fill"></i> info@bikinibottomfan.com</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> Fondo del Mar, Océano Pacífico</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright text-center py-3 fade-up">
+                <small>&copy; 2025 Bikini Bottom Fan Page. Todos los derechos reservados.</small>
+            </div>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const form = document.querySelector('form.glass-form');
+
+                form.addEventListener('submit', (event) => {
+                    event.preventDefault(); // evita que el formulario se envíe realmente
+
+                    alert("We were unable to receive your email. Please send it to info@bikinibottomfan.com.");
+
+                    form.reset(); // limpia los campos
+                });
+            });
+        </script>
+    </div>
 </body>
+
 </html>
