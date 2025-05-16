@@ -75,7 +75,7 @@ body {
 /* Gradientes */
 #inicio { background: linear-gradient(to right, #00c6ff, #0072ff); 
   position: relative; 
-  z-index: 9999;
+  z-index: 30;
 }
 #personajes { background: linear-gradient(to right, #ff9a9e, #fad0c4); }
 #episodios { background: linear-gradient(to right, #a18cd1, #fbc2eb); }
@@ -182,7 +182,7 @@ body {
   top: 0;
   width: 100%;
   background-color: var(--amarillo);
-  z-index: 100;
+  z-index: 80;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .navTool ul {
@@ -271,10 +271,14 @@ body {
 
 #episodios-hero {
   background-color: #a6c1ee;
+  z-index: 20;
+  position: relative;
 }
 
 .container-fluid {
   background-color: #a6c1ee;
+  position: relative;
+  z-index: 9999;
 }
 
 .bordercard {
