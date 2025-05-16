@@ -259,7 +259,7 @@ body {
 .navTool a {
   text-decoration: none;
   color: var(--texto);
-  font-weight: 500;
+  font-weight: 800;
   display: inline-block;
   position: relative;
   transition: transform 0.3s ease, color 0.3s ease;
