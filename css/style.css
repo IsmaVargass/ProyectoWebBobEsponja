@@ -551,3 +551,32 @@ a.btn {
   outline: none;         
   box-shadow: none;       
 }
+
+body.fondo3-bg {
+  position: relative;
+  min-height: 100vh; /* que cubra toda la altura */
+  background: url('../img/fondo3.jpg') no-repeat center center fixed;
+  background-size: cover;  /* importante para que no se repita y escale bien */
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+body.fondo3-bg .container-fluid,
+body.fondo3-bg .container {
+  background-color: transparent !important;
+}
+
+body.fondo3-bg .seccion {
+  background-color: transparent !important;
+}
+
+.collapse {
+  transition: height 0.8s ease;
+}
+
+.slow-collapse.collapse {
+  transition: height 1s ease;
+}
