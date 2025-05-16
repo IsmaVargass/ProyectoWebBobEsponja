@@ -523,3 +523,10 @@ body.fondo-bg .seccion {
 .glass-form button:hover {
   background: rgba(255, 255, 255, 0.4);
 }
+
+a.btn {
+  background: none;      
+  border: none;          
+  outline: none;         
+  box-shadow: none;       
+}
