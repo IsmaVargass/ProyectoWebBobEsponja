@@ -46,12 +46,54 @@ body {
 
 .upperNav {
   position: relative;
-  background-color: var(--azul);
-  padding: 1rem 0;
+  padding: 2rem 0;
+  overflow: hidden;
+  z-index: 1;
 }
+
+.upperNav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/banner.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-position: center 30%;
+  z-index: -1;
+}
+
+#fixed-logo {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 70px;   
+  z-index: 1050; 
+  filter: drop-shadow(0 0 8px var(--azul));
+  transition: transform 0.3s ease;
+}
+
+#fixed-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#fixed-logo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
 #logo {
   filter: drop-shadow(0 0 12px var(--azul));
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
 }
+
 #bob1 {
   position: absolute;
   right: 5%;
@@ -203,7 +245,7 @@ body {
   font-weight: 500;
   display: inline-block;
   position: relative;
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
   font-size: 1rem;    
 }
 .navTool a::after {
@@ -217,8 +259,8 @@ body {
   transition: width 0.3s ease;
 }
 .navTool a:hover {
-  color: var(--morado);
-  transform: translateY(-3px);
+  color: #f472b6;
+  transform: scale(0.95);
 }
 .navTool a:hover::after {
   width: 100%;
