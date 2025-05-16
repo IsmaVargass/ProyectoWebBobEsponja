@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personajes</title>
+    <title>Characters</title>
     <link rel="icon" href="../img/icon.png" type="image/png" sizes="32x32" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/bootstrap.css">
@@ -13,24 +13,23 @@
 
 <body>
     <div class="container-fluid px-0 mx-0">
-        <header>
-            <div class="upperNav text-center">
-                <a href="../index.html"><img id="logo" class="img-fluid p-3 w-25"src="../img/Logo.png" alt="Bob Esponja"/></a>      
-                <img class="img-fluid p-3" id="bob1" src="../img/BE1.png" alt="Imagen Bob Esponja">
-                <img class="img-fluid p-3 w-25" id="pat1" src="../img/PatricioEstrella.webp" alt="Imagen Patricio">
-            </div>
-        </header>
+    <header class="upperNav text-center">
+        <a href="../index.html" id="fixed-logo" title="Inicio">
+  <img src="../img/Logo.png" alt="Logo Bob Esponja" />
+</a>
+    <img id="logo" class="img-fluid p-3 w-25"src="../img/Logo.png" alt="Bob Esponja"/></a>   <!-- OCULTO -->
+    </header>
 
         <!--Nav fuera para que funcione position sticky-->
-        <nav id="navtool" class="navTool text-center fw-medium">
+        <nav id="navtool" class="navTool text-center fw-bold">
             <ul class="navtool-brand"> 
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html">Characters</a></li>
-                <li><a href="../index.html">Episodes</a></li>
-                <li><a href="../index.html">Gallery</a></li>
-                <li><a href="../index.html">Recipes</a></li>
-                <li><a href="../index.html">Simon says</a></li>
-                <li><a href="../index.html">Contact</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="personajes.html">Characters</a></li>
+        <li><a href="episodios.html" class="active">Episodes</a></li>
+        <li><a href="galeria.html">Gallery</a></li>
+        <li><a href="recetas.html">Recipes</a></li>
+        <li><a href="simon.html">Simon says</a></li>
+        <li><a href="contacto.html">Contact</a></li>
             </ul>
         </nav>
         <main>
@@ -38,7 +37,7 @@
                 <section id="inicio" class="col-12 text-center seccion animado">
                     <!--Wave-->
                     <div class="bg_color p-5">
-                        <h1 class="display-1 text-center py-5">Characters</h1>
+                        <h1 class="display-1 text-center py-5 fade-up">Characters</h1>
                     </div>
                     <div class="wave w1"></div>
                     <div class="wave w2"></div>
@@ -47,7 +46,7 @@
             
             <div class="row justify-content-center align-items-center g-3 mt-5">
                 <div class="col-11 col-md-5 my-3">
-                    <section class="card" style="background-color: #fffc67e4;">
+                    <section class="card fade-left" style="background-color: #fffc67e4;">
                         <img src="../img/BE2.jpg" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
                         <div class="card-body ">
                             <h2 class="card-title">SpongeBob</h2><br>
@@ -63,7 +62,7 @@
                 </div>
             
                 <div class="col-11 col-md-5 my-3">
-                    <section class="card" style="background-color: #fab5d9e4;">
+                    <section class="card fade-right" style="background-color: #fab5d9e4;">
                         <img src="../img/PS.jpg" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
                         <div class="card-body ">
                             <h2 class="card-title">Patrick Star</h2><br>
@@ -79,9 +78,9 @@
                 </div>
             
                 <div class="col-11 col-md-5 my-3">
-                    <section class="card" style="background-color: #c8fef6e4;">
+                    <section class="card fade-left" style="background-color: #c8fef6e4;">
                         <img src="../img/ST.webp" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
-                        <div class="card-body ">
+                        <div class="card-body  ">
                             <h2 class="card-title">Squidward</h2><br>
                             <p style="color: black;">A grumpy, cynical octopus and SpongeBob's neighbor. He enjoys playing the clarinet and longs for a life of sophistication away from SpongeBob's antics.</p>
                         </div>
@@ -94,7 +93,7 @@
                 </div>
             
                 <div class="col-11 col-md-5 my-3">
-                    <section class="card" style="background-color: #ffdc9ae4;">
+                    <section class="card fade-right" style="background-color: #ffdc9ae4;">
                         <img src="../img/SA.jpg" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
                         <div class="card-body ">
                             <h2 class="card-title">Sandy</h2><br>
@@ -109,7 +108,7 @@
                 </div>
             
                 <div class="col-11 col-md-5 my-3">
-                    <section class="card" style="background-color: #fc9e9edc;">
+                    <section class="card fade-left" style="background-color: #fc9e9edc;">
                         <img src="../img/KR.jpg" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
                         <div class="card-body ">
                             <h2 class="card-title">Mr. Krabs</h2><br>
@@ -138,7 +137,42 @@
                     </section>
                 </div>
             </div>
-            
+            <footer>
+  <div class="container footer-grid fade-up">
+    <!-- Sobre Bikini Bottom -->
+    <div class="footer-block about">
+      <h5>Sobre Bikini Bottom</h5>
+      <p>Bienvenido a la página no oficial de fanáticos de Bob Esponja, donde podrás explorar personajes, episodios, galerías y mucho más sobre el mundo submarino más divertido.</p>
+    </div>
+
+    <!-- Enlaces rápidos -->
+    <div class="footer-block links">
+      <h5>Enlaces</h5>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="episodios.html">Episodios</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="recetas.html">Recetas</a></li>
+      </ul>
+    </div>
+
+    <!-- Contacto -->
+    <div class="footer-block contact">
+      <h5>Contacto</h5>
+      <ul>
+        <li><i class="bi bi-envelope-fill"></i> info@bikinibottomfan.com</li>
+        <li><i class="bi bi-geo-alt-fill"></i> Fondo del Mar, Océano Pacífico</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="copyright text-center py-3 fade-up">
+    <small>&copy; 2025 Bikini Bottom Fan Page. Todos los derechos reservados.</small>
+  </div>
+</footer>
         </main>
     </div>
 </body>
