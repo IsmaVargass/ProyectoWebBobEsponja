@@ -128,19 +128,6 @@ body {
   opacity: 0;
 }
 
-#bob1 {
-  position: absolute;
-  right: 5%;
-  width: 20%;
-  filter: drop-shadow(0 0 12px var(--amarillo));
-}
-#pat1 {
-  position: absolute;
-  left: 5%;
-  filter: drop-shadow(0 0 12px var(--gris-claro));
-}
-
-
 .seccion {
   width: 100%;
   min-height: 30vh;
@@ -149,10 +136,7 @@ body {
 }
 
 /* Gradientes */
-#inicio { background: linear-gradient(to right, #00c6ff, #0072ff); 
-  position: relative; 
-  z-index: 30;
-}
+
 #personajes { background: linear-gradient(to right, #ff9a9e, #fad0c4); }
 #episodios { background: linear-gradient(to right, #a18cd1, #fbc2eb); }
 #galeria { background: linear-gradient(to right, #fbc2eb, #a6c1ee); }
@@ -354,6 +338,26 @@ body {
   z-index: 20;
   position: relative;
 }
+.title{
+  color: var(--amarillo);
+}
+
+/*===========cards===========*/
+
+.icono{width:24px;cursor:pointer;transition:transform .2s}
+.icono:hover{transform:scale(1.2)}
+
+#sb{
+  background-color: #feffc0;
+  opacity: 90%;
+
+}
+
+#ps{
+  background-color: #f2cffa;
+  opacity: 90%;
+}
+/*====================================================*/
 
 .container-fluid {
   background-color: #a6c1ee;
@@ -570,6 +574,27 @@ body.fondo3-bg .container {
 }
 
 body.fondo3-bg .seccion {
+  background-color: transparent !important;
+}
+
+body.fondo4-bg {
+  position: relative;
+  min-height: 100vh; /* que cubra toda la altura */
+  background: url('../img/fondo4.jpg') no-repeat center center fixed;
+  background-size: cover;  /* importante para que no se repita y escale bien */
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+body.fondo4-bg .container-fluid,
+body.fondo4-bg .container {
+  background-color: transparent !important;
+}
+
+body.fondo4-bg .seccion {
   background-color: transparent !important;
 }
 

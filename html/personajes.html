@@ -11,7 +11,7 @@
     <script defer src="../js/script.js"></script>
 </head>
 
-<body>
+<body class="fondo4-bg">
     <div class="container-fluid px-0 mx-0">
         <header class="upperNav text-center">
             <a href="../index.html" id="fixed-logo" title="Inicio">
@@ -32,164 +32,225 @@
                 <li><a href="contacto.html" class="active">Contact</a></li>
             </ul>
         </nav>
+
         <main>
-            <div class="row">
-                <section id="inicio" class="col-12 text-center seccion animado">
-                    <!--Wave-->
-                    <div class="bg_color p-5">
-                        <h1 class="display-1 text-center py-5 fade-up">Characters</h1>
+
+            <section class="seccion text-center">
+                <div class="p-5">
+                    <h1 class="title display-1 fade-up">Characters</h1>
+                    <p class="mt-4 h4 text-light divetext fade-up">Taste Bikini Bottom’s finest creations!</p>
+                </div>
+            </section>
+
+            <section class="container my-5">
+                <div class="row gy-4 justify-content-center">
+
+                    <div class="col-12 col-md-6 col-lg-4 fade-left">
+                        <div id="sb" class="card h-100 border-0 shadow bordercard d-flex flex-column">
+                            <img src="../img/BE2.jpg" class="card-img-top img-fluid rounded-4" alt="SpongeBob">
+                            <div class="card-body text-dark flex-grow-1">
+                                <h5 class="card-title fw-bold">SpongeBob</h5>
+                                <p class="card-text">A cheerful, optimistic sea sponge who works as a
+                                        fry cook at the Krusty Krab and loves jellyfishing and blowing bubbles</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex justify-content-start">
+                                <button class="btn p-0 me-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#desc1" aria-expanded="false" aria-controls="desc1">
+                                    <img src="../img/Icon1.png" class="icono" alt="Icono 1">
+                                </button>
+                                <button class="btn p-0 me-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#desc2" aria-expanded="false" aria-controls="desc2">
+                                    <img src="../img/Icon2.png" class="icono" alt="Icono 2">
+                                </button>
+                                <button class="btn p-0" type="button" data-bs-toggle="collapse" data-bs-target="#desc3"
+                                    aria-expanded="false" aria-controls="desc3">
+                                    <img src="../img/Icon3.png" class="icono" alt="Icono 3">
+                                </button>
+                            </div>
+                            <div class="collapse" id="desc1">
+                                <div class="card-body py-2">Always optimistic, even in tough moments</div>
+                            </div>
+                            <div class="collapse" id="desc2">
+                                <div class="card-body py-2">He loves being silly with his friends</div>
+                            </div>
+                            <div class="collapse" id="desc3">
+                                <div class="card-body py-2">I wouldn't let him drive</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="wave w1"></div>
-                    <div class="wave w2"></div>
-                </section>
+
+
+
+                    <div class="col-12 col-md-6 col-lg-4 fade-left">
+                        <div id="ps" class="card h-100 border-0 shadow bordercard">
+                            <img src="../img/PS.jpg" class="card-img-top img-fluid rounded-4" alt="Krabby Patty">
+                            <div class="card-body text-dark">
+                                <h5 class="card-title fw-bold">Patrick Star</h5>
+                                <p class="card-text">
+                                    SpongeBob's best friend; a lovable, dim-witted
+                                    starfish known for his simplicity and humorous cluelessness.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 d-flex justify-content-start">
+                                <button class="btn p-0 me-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#desc1" aria-expanded="false" aria-controls="desc1">
+                                    <img src="../img/Icon4.png" class="icono" alt="Icono 1">
+                                </button>
+                                <button class="btn p-0 me-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#desc2" aria-expanded="false" aria-controls="desc2">
+                                    <img src="../img/Icon5.png" class="icono" alt="Icono 2">
+                                </button>
+                                <button class="btn p-0" type="button" data-bs-toggle="collapse" data-bs-target="#desc3"
+                                    aria-expanded="false" aria-controls="desc3">
+                                    <img src="../img/Icon6.png" class="icono" alt="Icono 3">
+                                </button>
+                            </div>
+                            <div class="collapse" id="desc1">
+                                <div class="card-body py-2">He hardly ever let his friends down.</div>
+                            </div>
+                            <div class="collapse" id="desc2">
+                                <div class="card-body py-2">Lazy as a cat.</div>
+                            </div>
+                            <div class="collapse" id="desc3">
+                                <div class="card-body py-2">He is surprisingly good at driving.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                        <div class="col-11 col-md-5 my-3">
+                            <section class="card fade-left" style="background-color: #c8fef6e4;">
+                                <img src="../img/ST.webp" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
+                                <div class="card-body  ">
+                                    <h2 class="card-title">Squidward</h2><br>
+                                    <p style="color: black;">A grumpy, cynical octopus and SpongeBob's neighbor. He
+                                        enjoys
+                                        playing the clarinet and longs for a life of sophistication away from
+                                        SpongeBob's
+                                        antics.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item" style="background-color: rgb(248, 167, 167);">Egocentric
+                                    </li>
+                                    <li class="list-group-item" style="background-color: rgb(251, 218, 168);">Complains
+                                        a lot
+                                    </li>
+                                    <li class="list-group-item" style="background-color: rgb(169, 208, 252);">Horrible
+                                        at
+                                        playing the clarinet</li>
+                                </ul>
+                            </section>
+                        </div>
+
+                        
+                        <div class="col-11 col-md-5 my-3">
+                            <section class="card fade-right" style="background-color: #ffdc9ae4;">
+                                <img src="../img/SA.jpg" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
+                                <div class="card-body ">
+                                    <h2 class="card-title">Sandy</h2><br>
+                                    <p style="color: black;">A smart, athletic squirrel from Texas who lives in an
+                                        underwater
+                                        dome. She's scientifically inclined, adventurous, and friendly.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item" style="background-color: rgb(245, 248, 167);">Smart</li>
+                                    <li class="list-group-item" style="background-color: rgb(251, 168, 202);">Loyal
+                                        friend</li>
+                                    <li class="list-group-item" style="background-color: rgb(215, 252, 169);">Skilled at
+                                        martial
+                                        arts</li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col-11 col-md-5 my-3">
+                            <section class="card fade-left" style="background-color: #fc9e9edc;">
+                                <img src="../img/KR.jpg" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
+                                <div class="card-body ">
+                                    <h2 class="card-title">Mr. Krabs</h2><br>
+                                    <p style="color: black;">The owner of the Krusty Krab restaurant, obsessively
+                                        focused on
+                                        making money. He’s a crab who values money above almost everything else, but has
+                                        a soft
+                                        spot for his daughter Pearl.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item" style="background-color: rgb(199, 252, 155);">Stingy
+                                    </li>
+                                    <li class="list-group-item" style="background-color: rgb(181, 232, 255);">Ingenious
+                                    </li>
+                                    <li class="list-group-item" style="background-color: rgb(252, 205, 169);">Good heart
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col-11 col-md-5 my-3">
+                            <section class="card fade-right" style="background-color: #397633dc;">
+                                <img src="../img/PL.jpg" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
+                                <div class="card-body ">
+                                    <h2 class="card-title">Sheldon J. Plankton</h2><br>
+                                    <p style="color: black;">The tiny antagonist who continually plots to steal the
+                                        secret
+                                        Krabby Patty formula from the Krusty Krab, running the unsuccessful Chum Bucket
+                                        restaurant.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item" style="background-color: rgb(252, 212, 155);">Evil
+                                        genious</li>
+                                    <li class="list-group-item" style="background-color: rgb(181, 255, 204);">Envious
+                                    </li>
+                                    <li class="list-group-item" style="background-color: rgb(169, 209, 252);">Computer
+                                        as a wife
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+
+                    </div>
+            </section>
+
+    </div>
+    <footer>
+        <div class="container footer-grid fade-up">
+            <!-- Sobre Bikini Bottom -->
+            <div class="footer-block about">
+                <h5>Sobre Bikini Bottom</h5>
+                <p>Bienvenido a la página no oficial de fanáticos de Bob Esponja, donde podrás explorar
+                    personajes, episodios, galerías y mucho más sobre el mundo submarino más divertido.</p>
             </div>
 
-            <div class="row justify-content-center align-items-center g-3 mt-5">
-                <div class="col-11 col-md-5 my-3">
-                    <section class="card fade-left" style="background-color: #fffc67e4;">
-                        <img src="../img/BE2.jpg" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
-                        <div class="card-body ">
-                            <h2 class="card-title">SpongeBob</h2><br>
-                            <p style="color: black;">A cheerful, optimistic sea sponge who works as a
-                                fry cook at the Krusty Krab and loves jellyfishing and blowing bubbles</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item" style="background-color: rgb(255, 208, 215);">Optimistic</li>
-                            <li class="list-group-item" style="background-color: rgb(253, 210, 129);">Silly</li>
-                            <li class="list-group-item" style="background-color: rgb(252, 169, 169);">Bad at driving
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-
-                <div class="col-11 col-md-5 my-3">
-                    <section class="card fade-right" style="background-color: #fab5d9e4;">
-                        <img src="../img/PS.jpg" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
-                        <div class="card-body ">
-                            <h2 class="card-title">Patrick Star</h2><br>
-                            <p style="color: black;">SpongeBob's best friend; a lovable, dim-witted
-                                starfish known for his simplicity and humorous cluelessness.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item" style="background-color: rgb(244, 252, 155);">Great friend</li>
-                            <li class="list-group-item" style="background-color: rgb(181, 232, 255);">Lazy</li>
-                            <li class="list-group-item" style="background-color: rgb(252, 169, 169);">Good at driving
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-
-                <div class="col-11 col-md-5 my-3">
-                    <section class="card fade-left" style="background-color: #c8fef6e4;">
-                        <img src="../img/ST.webp" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
-                        <div class="card-body  ">
-                            <h2 class="card-title">Squidward</h2><br>
-                            <p style="color: black;">A grumpy, cynical octopus and SpongeBob's neighbor. He enjoys
-                                playing the clarinet and longs for a life of sophistication away from SpongeBob's
-                                antics.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item" style="background-color: rgb(248, 167, 167);">Egocentric</li>
-                            <li class="list-group-item" style="background-color: rgb(251, 218, 168);">Complains a lot
-                            </li>
-                            <li class="list-group-item" style="background-color: rgb(169, 208, 252);">Horrible at
-                                playing the clarinet</li>
-                        </ul>
-                    </section>
-                </div>
-
-                <div class="col-11 col-md-5 my-3">
-                    <section class="card fade-right" style="background-color: #ffdc9ae4;">
-                        <img src="../img/SA.jpg" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
-                        <div class="card-body ">
-                            <h2 class="card-title">Sandy</h2><br>
-                            <p style="color: black;">A smart, athletic squirrel from Texas who lives in an underwater
-                                dome. She's scientifically inclined, adventurous, and friendly.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item" style="background-color: rgb(245, 248, 167);">Smart</li>
-                            <li class="list-group-item" style="background-color: rgb(251, 168, 202);">Loyal friend</li>
-                            <li class="list-group-item" style="background-color: rgb(215, 252, 169);">Skilled at martial
-                                arts</li>
-                        </ul>
-                    </section>
-                </div>
-
-                <div class="col-11 col-md-5 my-3">
-                    <section class="card fade-left" style="background-color: #fc9e9edc;">
-                        <img src="../img/KR.jpg" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
-                        <div class="card-body ">
-                            <h2 class="card-title">Mr. Krabs</h2><br>
-                            <p style="color: black;">The owner of the Krusty Krab restaurant, obsessively focused on
-                                making money. He’s a crab who values money above almost everything else, but has a soft
-                                spot for his daughter Pearl.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item" style="background-color: rgb(199, 252, 155);">Stingy</li>
-                            <li class="list-group-item" style="background-color: rgb(181, 232, 255);">Ingenious</li>
-                            <li class="list-group-item" style="background-color: rgb(252, 205, 169);">Good heart</li>
-                        </ul>
-                    </section>
-                </div>
-
-                <div class="col-11 col-md-5 my-3">
-                    <section class="card fade-right" style="background-color: #397633dc;">
-                        <img src="../img/PL.jpg" style="border-radius: 5px 5px 0 0;" alt="SpongeBob">
-                        <div class="card-body ">
-                            <h2 class="card-title">Sheldon J. Plankton</h2><br>
-                            <p style="color: black;">The tiny antagonist who continually plots to steal the secret
-                                Krabby Patty formula from the Krusty Krab, running the unsuccessful Chum Bucket
-                                restaurant.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item" style="background-color: rgb(252, 212, 155);">Evil genious</li>
-                            <li class="list-group-item" style="background-color: rgb(181, 255, 204);">Envious</li>
-                            <li class="list-group-item" style="background-color: rgb(169, 209, 252);">Computer as a wife
-                            </li>
-                        </ul>
-                    </section>
-                </div>
+            <!-- Enlaces rápidos -->
+            <div class="footer-block links">
+                <h5>Enlaces</h5>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="personajes.html">Personajes</a></li>
+                    <li><a href="episodios.html">Episodios</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
             </div>
-            <footer>
-                <div class="container footer-grid fade-up">
-                    <!-- Sobre Bikini Bottom -->
-                    <div class="footer-block about">
-                        <h5>Sobre Bikini Bottom</h5>
-                        <p>Bienvenido a la página no oficial de fanáticos de Bob Esponja, donde podrás explorar
-                            personajes, episodios, galerías y mucho más sobre el mundo submarino más divertido.</p>
-                    </div>
 
-                    <!-- Enlaces rápidos -->
-                    <div class="footer-block links">
-                        <h5>Enlaces</h5>
-                        <ul>
-                            <li><a href="../index.html">Inicio</a></li>
-                            <li><a href="personajes.html">Personajes</a></li>
-                            <li><a href="episodios.html">Episodios</a></li>
-                            <li><a href="galeria.html">Galería</a></li>
-                            <li><a href="recetas.html">Recetas</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
+            <!-- Contacto -->
+            <div class="footer-block contact">
+                <h5>Contacto</h5>
+                <ul>
+                    <li><i class="bi bi-envelope-fill"></i> info@bikinibottomfan.com</li>
+                    <li><i class="bi bi-geo-alt-fill"></i> Fondo del Mar, Océano Pacífico</li>
+                </ul>
+            </div>
+        </div>
 
-                    <!-- Contacto -->
-                    <div class="footer-block contact">
-                        <h5>Contacto</h5>
-                        <ul>
-                            <li><i class="bi bi-envelope-fill"></i> info@bikinibottomfan.com</li>
-                            <li><i class="bi bi-geo-alt-fill"></i> Fondo del Mar, Océano Pacífico</li>
-                        </ul>
-                    </div>
-                </div>
+        <hr>
 
-                <hr>
-
-                <div class="copyright text-center py-3 fade-up">
-                    <small>&copy; 2025 Bikini Bottom Fan Page. Todos los derechos reservados.</small>
-                </div>
-            </footer>
-        </main>
+        <div class="copyright text-center py-3 fade-up">
+            <small>&copy; 2025 Bikini Bottom Fan Page. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+    </main>
     </div>
 </body>
+<!--Animación cards personajes-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
