@@ -342,7 +342,12 @@ body {
   color: var(--amarillo);
 }
 
-/*===========cards===========*/
+.bg-title{
+  background-color: rgba(165, 210, 246, 0.443);
+  
+}
+
+/*===========characters===========*/
 
 .icono{width:24px;cursor:pointer;transition:transform .2s}
 .icono:hover{transform:scale(1.2)}
@@ -615,6 +620,27 @@ body.fondo4-bg .container {
 }
 
 body.fondo4-bg .seccion {
+  background-color: transparent !important;
+}
+
+body.fondo5-bg {
+  position: relative;
+  min-height: 100vh; /* que cubra toda la altura */
+  background: url('../img/fondo5.webp') no-repeat center center fixed;
+  background-size: cover;  /* importante para que no se repita y escale bien */
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+body.fondo5-bg .container-fluid,
+body.fondo5-bg .container {
+  background-color: transparent !important;
+}
+
+body.fondo5-bg .seccion {
   background-color: transparent !important;
 }
 
