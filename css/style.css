@@ -8,6 +8,13 @@
   --naranja: #ff9800;
   --gris-claro: #f5f5f5;
   --texto: #333;
+/*Carrousel*/
+  --negro: #393939;
+  --blanco: #ececec;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #ffffff;
+  --borde-negro: #00000050;
+  --marcado: rgb(127, 195, 255);
 }
 
 @font-face {
@@ -383,6 +390,75 @@ body {
   opacity: 90%;
 }
 /*====================================================*/
+
+/*==============Carrousel 1=============*/
+
+.carrousel {
+  li {
+  list-style-type: none;
+  }
+  width: 50%;
+  max-width: 120em;
+  padding: 2em;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: rgb(248, 213, 219);
+  box-shadow: 1px 2px 2px var(--sombra-ppal), -1px -1px 2px var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  overflow: hidden;
+}
+
+.carrousel .grande {
+  width: 200%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: rgb(246, 246, 161);
+  box-shadow: 1px 1px 2px var(--sombra-ppal), -1px -1px 2px var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  padding: 2em;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+
+.carrousel .img {
+  width: calc( 100% / 2 - 2em);
+  min-height: 10vh;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 1px 1px 2px var(--sombra-ppal), -1px -1px 2px var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.carrousel .puntos {
+  width: 100%;
+  margin: 1em 0 0;
+  padding: 0.4em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel .punto {
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-color: var(--blanco);
+  box-shadow: 0.6px 0.6px 1.2px var(--sombra-ppal), -0.6px -0.6px 1.2px var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.carrousel .punto.activo {
+  background-color: lightblue;
+}
+
+/*====================================*/
 
 .container-fluid {
   background-color: #a6c1ee;
