@@ -350,11 +350,31 @@ body {
 #sb{
   background-color: #feffc0;
   opacity: 90%;
-
+  
 }
 
 #ps{
   background-color: #f2cffa;
+  opacity: 90%;
+}
+
+#sq{
+  background-color: #cffaf3;
+  opacity: 90%;
+}
+
+#sn{
+  background-color: #faeccf;
+  opacity: 90%;
+}
+
+#kr{
+  background-color: #facfcf;
+  opacity: 90%;
+}
+
+#pl{
+  background-color: #cffad6;
   opacity: 90%;
 }
 /*====================================================*/
