@@ -460,6 +460,29 @@ body {
 
 /*====================================*/
 
+/*==================Imágenes flotantes==================*/
+
+.artsm{
+  background-color: rgba(251, 232, 245, 0.746);
+}
+
+.art img {
+  animation: floatDiagonal 6s ease-in-out infinite;
+}
+
+@keyframes floatDiagonal {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -10px); /* 20px a la derecha y 20px hacia arriba */
+  }
+}
+
+
+
+/*====================================*/
+
 .container-fluid {
   background-color: #a6c1ee;
   position: relative;
