@@ -14,7 +14,7 @@
 
 /*======================Animación navbar====================*/
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   const navbar = document.getElementById('navtool');
   const navbarBrand = document.querySelector('.navtool-brand');
 
@@ -50,54 +50,54 @@ window.addEventListener('scroll', function() {
 
 // Añado el defer en el script de js que obliga ser ejecutado después de que el documento HTML se haya completado
 
-document.addEventListener('DOMContentLoaded', function() {
-const fadeElements = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
-  
-    // Usamos IntersectionObserver para detectar cuándo un elemento entra en la vista
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // Cuando el elemento entra en la vista, se le añade la clase 'show' para activar la animación
-          entry.target.classList.add('show');
-        }
-      });
-    }, { threshold: 0.2 }); // Umbral ajustado para activar el efecto cuando un 20% del elemento es visible
-  
-    fadeElements.forEach(el => observer.observe(el));
-  });
+document.addEventListener('DOMContentLoaded', function () {
+  const fadeElements = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
 
-  /*========================Carrousel============================*/
+  // Usamos IntersectionObserver para detectar cuándo un elemento entra en la vista
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Cuando el elemento entra en la vista, se le añade la clase 'show' para activar la animación
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.2 }); // Umbral ajustado para activar el efecto cuando un 20% del elemento es visible
 
-  const grande    = document.querySelector('.grande')
-const punto     = document.querySelectorAll('.punto')
+  fadeElements.forEach(el => observer.observe(el));
+});
+
+/*========================Carrousel============================*/
+
+const grande = document.querySelector('.grande')
+const punto = document.querySelectorAll('.punto')
 
 // Cuando CLICK en punto
-    // Saber la posición de ese punto
-    // Aplicar un transform translateX al grande
-    // QUITAR la clase activo de TODOS puntos
-    // AÑADIR la clase activo al punto que hemos hecho CLICK
+// Saber la posición de ese punto
+// Aplicar un transform translateX al grande
+// QUITAR la clase activo de TODOS puntos
+// AÑADIR la clase activo al punto que hemos hecho CLICK
 
 // Recorrer TODOS los punto
-punto.forEach( ( cadaPunto , i )=> {
-    // Asignamos un CLICK a cadaPunto
-    punto[i].addEventListener('click',()=>{
+punto.forEach((cadaPunto, i) => {
+  // Asignamos un CLICK a cadaPunto
+  punto[i].addEventListener('click', () => {
 
-        // Guardar la posición de ese PUNTO
-        let posicion  = i
-        // Calculando el espacio que debe DESPLAZARSE el GRANDE
-        let operacion = posicion * -50
+    // Guardar la posición de ese PUNTO
+    let posicion = i
+    // Calculando el espacio que debe DESPLAZARSE el GRANDE
+    let operacion = posicion * -50
 
-        // MOVEMOS el grand
-        grande.style.transform = `translateX(${ operacion }%)`
+    // MOVEMOS el grand
+    grande.style.transform = `translateX(${operacion}%)`
 
-        // Recorremos TODOS los punto
-        punto.forEach( ( cadaPunto , i )=>{
-            // Quitamos la clase ACTIVO a TODOS los punto
-            punto[i].classList.remove('activo')
-        })
-        // Añadir la clase activo en el punto que hemos hecho CLICK
-        punto[i].classList.add('activo')
-
+    // Recorremos TODOS los punto
+    punto.forEach((cadaPunto, i) => {
+      // Quitamos la clase ACTIVO a TODOS los punto
+      punto[i].classList.remove('activo')
     })
+    // Añadir la clase activo en el punto que hemos hecho CLICK
+    punto[i].classList.add('activo')
+
+  })
 })
-  
+
