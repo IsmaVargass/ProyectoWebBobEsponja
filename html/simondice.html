@@ -1,11 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon says</title>
+    <link rel="icon" href="../img/icon.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../js/script.js"></script>
+    <script defer src="../js/bootstrap.js"></script>
+    <script defer src="../js/simonsays.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 </head>
-<body>
-    
+
+<body class="fondo3-bg">
+    <div class="container-fluid px-0 mx-0">
+        <header class="upperNav text-center">
+            <a href="../index.html" id="fixed-logo" title="Inicio">
+                <img src="../img/Logo.png" alt="Logo Bob Esponja" />
+            </a>
+            <img id="logo" class="img-fluid p-3 w-25" src="../img/Logo.png" alt="Bob Esponja" />
+        </header>
+
+        <!-- Nav -->
+        <nav class="navTool fw-bold text-center" id="navtool">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="personajes.html">Characters</a></li>
+                <li><a href="episodios.html">Episodes</a></li>
+                <li><a href="galeria.html">Gallery</a></li>
+                <li><a href="recetas.html">Recipes</a></li>
+                <li><a href="simondice.html">Simon says</a></li>
+                <li><a href="contacto.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sección de Simon dice -->
+        <section class="simon container my-5 text-center">
+            <h2 class="simon display-4 mb-4">Simon Says</h2>
+
+            <div id="score" class="h4">Score: 0 / 100</div>
+            <div id="message" class="h5 text-danger my-3"></div>
+
+            <div id="game-area" class="d-flex justify-content-center gap-3 my-4">
+                <img src="../img/simon1.jpg" id="0" class="game-button  shadow-sm" alt="Botón 0">
+                <img src="../img/profesora.png" id="1" class="game-button  shadow-sm" alt="Botón 1">
+                <img src="../img/PatricioEstrella.webp" id="2" class="game-button  shadow-sm" alt="Botón 2">
+                <img src="../img/Larry-langosta.png" id="3" class="game-button  shadow-sm" alt="Botón 3">
+                <img src="../img/calamardo.png" id="4" class="game-button  shadow-sm" alt="Botón 4">
+            </div>
+
+            <button id="startBtn" class="btn btn-primary">Start Game</button>
+        </section>
+
+        <footer class="mt-auto">
+            <div class="container footer-grid fade-up">
+                <div class="footer-block about">
+                    <h5>Sobre Bikini Bottom</h5>
+                    <p>Bienvenido a la página no oficial de fanáticos de Bob Esponja, donde podrás explorar personajes,
+                        episodios, galerías y mucho más sobre el mundo submarino más divertido.</p>
+                </div>
+                <div class="footer-block links">
+                    <h5>Enlaces</h5>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="personajes.html">Personajes</a></li>
+                        <li><a href="episodios.html">Episodios</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="recetas.html">Recetas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="simondice.html">Simon dice</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block contact">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><i class="bi bi-envelope-fill"></i> info@bikinibottomfan.com</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> Fondo del Mar, Océano Pacífico</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright text-center py-3 fade-up">
+                <small>&copy; 2025 Bikini Bottom Fan Page. Todos los derechos reservados.</small>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>

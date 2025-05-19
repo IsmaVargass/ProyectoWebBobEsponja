@@ -754,3 +754,48 @@ body.fondo5-bg .seccion {
 .slow-collapse.collapse {
   transition: height 1s ease;
 }
+
+
+/* SIMON SAYS */
+
+#game-area {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.game-button {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: transform .1s, opacity .1s;
+}
+
+.game-button.active {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+#controls {
+  margin-top: 2rem;
+}
+
+#startBtn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#score,
+#message {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.simon {
+  color: white;
+  font-family: 'Krabby Patty';
+  src: url('/font/krabby_patty/Krabby Patty.ttf') format('truetype');
+}
