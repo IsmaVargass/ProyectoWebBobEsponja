@@ -761,7 +761,7 @@ body.fondo5-bg .seccion {
 #game-area {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   margin: 1rem 0;
 }
 
@@ -771,6 +771,8 @@ body.fondo5-bg .seccion {
   cursor: pointer;
   opacity: 0.8;
   transition: transform .1s, opacity .1s;
+  border: var(--blanco) 2px solid;
+  background-color: var(--verde);
 }
 
 .game-button.active {
