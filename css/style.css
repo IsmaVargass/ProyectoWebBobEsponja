@@ -259,6 +259,7 @@ body {
 .navTool ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
   list-style: none;
   padding: 0.75rem 1rem;
