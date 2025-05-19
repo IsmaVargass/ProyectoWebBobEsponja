@@ -135,15 +135,44 @@ body {
   opacity: 0;
 }
 
+.arenita {
+  width: 20% !important;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 30px; 
+  filter: drop-shadow(0 0 15px var(--texto));
+}
+
+.arenita2:hover {
+  transform: scale(1.05) !important;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card-text {
+  color: var(--texto);
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'Lexend', sans-serif;
+}
+
+.patricio {
+  width: 20% !important;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 30px; 
+}
+
 .seccion {
   width: 100%;
   min-height: 30vh;
   padding: 1rem 1rem;
   color: #fff;
+  position: relative;
+  overflow: visible;
 }
 
 /* Gradientes */
-
 #personajes { background: linear-gradient(to right, #ff9a9e, #fad0c4); }
 #episodios { background: linear-gradient(to right, #a18cd1, #fbc2eb); }
 #galeria { background: linear-gradient(to right, #fbc2eb, #a6c1ee); }

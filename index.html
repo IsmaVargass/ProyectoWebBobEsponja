@@ -37,84 +37,147 @@
         </ul>
       </nav>
 
-      <!-- SECCIONES -->
-      <main>
-        <section id="personajes" class="seccion fade-right reveal-backwards">
-          <h2><a href="html/personajes.html">Characters</a></h2>
-          <div class="imagenes">
-            <a href="html/personajes.html" class="btn"><img src="img/arenita.jpg" alt="Icono personajes" /></a>
-          </div>
-        </section>
-
-        <section id="episodios" class="seccion fade-left">
-          <h2><a href="html/episodios.html">Episodes</a></h2>
-          <div class="imagenes">
-          <a href="html/episodios.html" class="btn"><img src="img/calamardo.png" alt="Icono episodios" /></a>
-          </div>
-        </section>
-
-        <section id="galeria" class="seccion fade-right reveal-backwards">
-          <h2><a href="html/galeria.html">Gallery</a></h2>
-          <div class="imagenes">
-            <a href="html/galeria.html" class="btn"><img src="img/Larry-langosta.png" alt="Icono galería" /></a>
-          </div>
-        </section>
-
-        <section id="recetas" class="seccion fade-left">
-          <h2><a href="html/recetas.html">Recipes</a></h2>
-          <div class="imagenes">
-            <a href="html/recetas.html" class="btn"><img src="img/profesora.png" alt="Icono recetas" /></a>
-          </div>
-        </section>
-
-        <section id="simon" class="seccion fade-right reveal-backwards">
-          <h2><a href="html/simondice.html">Simon Says</a></h2>
-          <div id="game-container"></div>
-          <div class="imagenes">
-            <a href="html/simondice.html" class="btn"><img src="img/PatricioEstrella.webp" alt="Icono Simon Says" /></a>
-          </div>
-        </section>
-
-
-        <footer>
-          <div class="container footer-grid fade-up">
-            <!-- Sobre Bikini Bottom -->
-            <div class="footer-block about">
-              <h5>Sobre Bikini Bottom</h5>
-              <p>Bienvenido a la página no oficial de fanáticos de Bob Esponja, donde podrás explorar personajes,
-                episodios, galerías y mucho más sobre el mundo submarino más divertido.</p>
-            </div>
-
-            <!-- Enlaces rápidos -->
-            <div class="footer-block links">
-              <h5>Enlaces</h5>
-              <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="html/personajes.html">Personajes</a></li>
-                <li><a href="html/episodios.html">Episodios</a></li>
-                <li><a href="html/galeria.html">Galería</a></li>
-                <li><a href="html/recetas.html">Recetas</a></li>
-                <li><a href="html/contacto.html">Contacto</a></li>
-                <li><a href="html/simondice.html">Simon dice</a></li>
-              </ul>
-            </div>
-
-            <!-- Contacto -->
-            <div class="footer-block contact">
-              <h5>Contacto</h5>
-              <ul>
-                <li><i class="bi bi-envelope-fill"></i> info@bikinibottomfan.com</li>
-                <li><i class="bi bi-geo-alt-fill"></i> Fondo del Mar, Océano Pacífico</li>
-              </ul>
+      <!-- Characters -->
+      <section id="personajes" class="seccion fade-right reveal-backwards personajes">
+        <h2 class="text-center mb-4"><a href="html/personajes.html">Characters</a></h2>
+        <div class="container">
+          <div class="row gy-4 justify-content-center">
+            <div class="arenita col-12 col-md-6 col-lg-4 fade-left">
+              <a href="html/personajes.html">
+                <img src="img/arenita.jpg" class="arenita2 p-3 img-fluid rounded-4" alt="Arenita Mejillas">
+              </a>
+              <div class="card-body text-dark">
+                <a href="html/personajes.html" class="squishy squishy-candy text-decoration-none">
+                  <i class="bi bi-bookmark-star-fill"></i>
+                  <span>See Characters</span>
+                </a>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <hr>
-
-          <div class="copyright text-center py-3 fade-up">
-            <small>&copy; 2025 Bikini Bottom Fan Page. Todos los derechos reservados.</small>
+      <!-- Episodes -->
+      <section id="episodios" class="seccion fade-left episodios">
+        <h2 class="text-center mb-4"><a href="html/episodios.html">Episodes</a></h2>
+        <div class="container">
+          <div class="row gy-4 justify-content-center">
+            <div class="arenita  col-12 col-md-6 col-lg-4 fade-up">
+              <a href="html/episodios.html">
+                <img src="img/calamardo.png" class="arenita2 p-3 img-fluid rounded-4" alt="Icono episodios">
+              </a>
+              <div class="card-body text-dark">
+                <a href="html/episodios.html" class="squishy squishy-candy text-decoration-none">
+                  <i class="bi bi-bookmark-star-fill"></i>
+                  <span>See Episodes</span>
+                </a>
+              </div>
+            </div>
           </div>
-        </footer>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="galeria" class="seccion fade-right reveal-backwards galeria">
+        <h2 class="text-center mb-4"><a href="html/galeria.html">Gallery</a></h2>
+        <div class="container">
+          <div class="row gy-4 justify-content-center">
+            <div class="arenita  col-12 col-md-6 col-lg-4 fade-left">
+              <a href="html/galeria.html">
+                <img src="img/Larry-langosta.png" class="arenita2 p-3 img-fluid rounded-4" alt="Icono galería">
+              </a>
+              <div class="card-body text-dark">
+                <a href="html/galeria.html" class="squishy squishy-candy text-decoration-none">
+                  <i class="bi bi-bookmark-star-fill"></i>
+                  <span>See Gallery</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recipes -->
+      <section id="recetas" class="seccion fade-left recetas">
+        <h2 class="text-center mb-4"><a href="html/recetas.html">Recipes</a></h2>
+        <div class="container">
+          <div class="row gy-4 justify-content-center">
+            <div class="arenita  col-12 col-md-6 col-lg-4 fade-right">
+              <a href="html/recetas.html">
+                <img src="img/profesora.png" class="arenita2 p-3 img-fluid rounded-4" alt="Icono recetas">
+              </a>
+              <div class="card-body text-dark">
+                <a href="html/recetas.html" class="squishy squishy-candy text-decoration-none">
+                  <i class="bi bi-bookmark-star-fill"></i>
+                  <span>See Recipes</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Simon Says -->
+      <section id="simon" class="seccion fade-right reveal-backwards simon">
+        <h2 class="text-center mb-4"><a href="html/simondice.html">Simon Says</a></h2>
+        <div class="container">
+          <div class="row gy-4 justify-content-center">
+            <div class="arenita  col-12 col-md-6 fade-left">
+              <a href="html/simondice.html">
+                <img src="img/PatricioEstrella.webp" class="arenita2 p-3 img-fluid rounded-4" alt="Icono Simon Says">
+              </a>
+              <div class="card-body text-dark">
+                <a href="html/simondice.html" class="squishy squishy-candy text-decoration-none">
+                  <i class="bi bi-bookmark-star-fill"></i>
+                  <span>Play Now</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <footer>
+        <div class="container footer-grid fade-up">
+          <!-- Sobre Bikini Bottom -->
+          <div class="footer-block about">
+            <h5>Sobre Bikini Bottom</h5>
+            <p>Bienvenido a la página no oficial de fanáticos de Bob Esponja, donde podrás explorar personajes,
+              episodios, galerías y mucho más sobre el mundo submarino más divertido.</p>
+          </div>
+
+          <!-- Enlaces rápidos -->
+          <div class="footer-block links">
+            <h5>Enlaces</h5>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="html/personajes.html">Personajes</a></li>
+              <li><a href="html/episodios.html">Episodios</a></li>
+              <li><a href="html/galeria.html">Galería</a></li>
+              <li><a href="html/recetas.html">Recetas</a></li>
+              <li><a href="html/contacto.html">Contacto</a></li>
+              <li><a href="html/simondice.html">Simon dice</a></li>
+            </ul>
+          </div>
+
+          <!-- Contacto -->
+          <div class="footer-block contact">
+            <h5>Contacto</h5>
+            <ul>
+              <li><i class="bi bi-envelope-fill"></i> info@bikinibottomfan.com</li>
+              <li><i class="bi bi-geo-alt-fill"></i> Fondo del Mar, Océano Pacífico</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="copyright text-center py-3 fade-up">
+          <small>&copy; 2025 Bikini Bottom Fan Page. Todos los derechos reservados.</small>
+        </div>
+      </footer>
 
       </main>
     </div>
