@@ -381,7 +381,6 @@ body {
 
 .bg-title{
   background-color: rgba(165, 210, 246, 0.443);
-  
 }
 
 /*===========characters===========*/
@@ -766,6 +765,10 @@ body.fondo5-bg {
   padding: 0;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
+}
+
+.estirar {
+  max-width: 100%;
 }
 
 body.fondo5-bg .container-fluid,
