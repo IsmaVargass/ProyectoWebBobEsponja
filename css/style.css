@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: 'Krabby Patty';
-  src: url('/font/krabby_patty/Krabby Patty.ttf') format('truetype');
+  src: url('../font/krabby_patty/KrabbyPatty.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
