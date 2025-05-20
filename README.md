@@ -1,6 +1,14 @@
 # 🌊 Proyecto Web de Bob Esponja 🧽
 
-Repositorio oficial de un **fan site** ambientado en Fondo de Bikini, construido con **HTML**, **CSS**, **JavaScript** y **Bootstrap 5**.
+> “¡Bienvenido a Fondo de Bikini, donde hasta las medusas cantan!”  
+
+Repositorio oficial de este **fan site**, construido con **HTML5**, **CSS3**, **JavaScript** y **Bootstrap 5**.
+
+---
+
+## 🔗 Visitar la Web de Bob Esponja
+
+<a href="https://ismavargass.github.io/ProyectoWebBobEsponja/" target="_blank" rel="noopener noreferrer">🌐 Ver la Web de Bob Esponja</a>
 
 ---
 
@@ -45,8 +53,3 @@ Repositorio oficial de un **fan site** ambientado en Fondo de Bikini, construido
 * **HTML5** para la estructura semántica.
 * **CSS3** (Sass opcional) y **Bootstrap 5** para estilos y componentes.
 * **JavaScript (ES6)** modular: DOM, eventos y lógica de juego.
-
----
-
-🔗 **Explora la Web:** [Web de Bob Esponja](https://ismavargass.github.io/ProyectoWebBobEsponja/)  
-
