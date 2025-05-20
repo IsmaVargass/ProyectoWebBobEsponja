@@ -5,38 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="icon" href="../img/icon.png" type="image/png" sizes="32x32" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <script defer src="../js/script.js"></script>
-    <script defer src="../js/bootstrap.bundle.min.js"></script>
+
+    <!-- Base: todas las rutas se resuelven desde un nivel arriba de html/ -->
+    <base href="../">
+
+    <link rel="icon" href="img/icon.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script defer src="js/script.js"></script>
+    <script defer src="js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="fondo5-bg">
     <div class="container-fluid px-0 mx-0">
         <header class="upperNav text-center">
-            <a href="../index.html" id="fixed-logo" title="Inicio">
-                <img src="../img/Logo.png" alt="Logo Bob Esponja" />
+            <a href="index.html" id="fixed-logo" title="Inicio">
+                <img src="img/Logo.png" alt="Logo Bob Esponja" />
             </a>
-            <img id="logo" class="img-fluid p-3 w-25" src="../img/Logo.png" alt="Bob Esponja" />
+            <img id="logo" class="img-fluid p-3 w-25" src="img/Logo.png" alt="Bob Esponja" />
         </header>
 
         <!-- Nav -->
         <nav class="navTool fw-bold text-center" id="navtool">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="personajes.html">Characters</a></li>
-                <li><a href="episodios.html">Episodes</a></li>
-                <li><a href="galeria.html" class="active">Gallery</a></li>
-                <li><a href="recetas.html">Recipes</a></li>
-                <li><a href="simondice.html">Simon says</a></li>
-                <li><a href="contacto.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html/personajes.html">Characters</a></li>
+                <li><a href="html/episodios.html">Episodes</a></li>
+                <li><a href="html/galeria.html" class="active">Gallery</a></li>
+                <li><a href="html/recetas.html">Recipes</a></li>
+                <li><a href="html/simondice.html">Simon says</a></li>
+                <li><a href="html/contacto.html">Contact</a></li>
             </ul>
         </nav>
     </div>
 
     <main>
-
         <section class="seccion text-center">
             <div class="bg-title rounded-3 p-5 estirar">
                 <h1 class="title display-1 fade-up">Fan art gallery</h1>
@@ -52,8 +55,8 @@
                 <!-- Carrousel 1 -->
                 <div class="carrousel fade-up col-11 col-md-6 mb-5">
                     <div class="grande">
-                        <img src="../img/art.jpg" alt="Imagen 1" class="img">
-                        <img src="../img/art2.jpg" alt="Imagen 2" class="img">
+                        <img src="img/art.jpg" alt="Imagen 1" class="img">
+                        <img src="img/art2.jpg" alt="Imagen 2" class="img">
                     </div>
                     <ul class="puntos">
                         <li class="punto activo"></li>
@@ -63,12 +66,12 @@
 
                 <!-- PC -->
                 <div class="art fade-right text-center col-12 col-md-6 m-auto my-5 d-none d-md-inline-block">
-                    <img class="w-50" src="../img/art3.png" alt="Patrick">
+                    <img class="w-50" src="img/art3.png" alt="Patrick">
                 </div>
 
                 <!-- Smartphones -->
                 <figure class="artsm fade-left text-center col-11 m-auto d-sm-block d-md-none my-5 rounded-3 py-3">
-                    <img class="w-50" src="../img/art3.png" alt="Patrick">
+                    <img class="w-50" src="img/art3.png" alt="Patrick">
                     <figcaption class="h3 fst-italic">Human Patrick</figcaption>
                 </figure>
 
@@ -86,13 +89,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="../img/art6.jpg" class="d-block w-100 rounded-3" alt="Slide 1">
+                            <img src="img/art6.jpg" class="d-block w-100 rounded-3" alt="Slide 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/art7.jpg" class="d-block w-100 rounded-3" alt="Slide 2">
+                            <img src="img/art7.jpg" class="d-block w-100 rounded-3" alt="Slide 2">
                         </div>
                         <div class="carousel-item">
-                            <img src="../img/art8.jpg" class="d-block w-100 rounded-3" alt="Slide 3">
+                            <img src="img/art8.jpg" class="d-block w-100 rounded-3" alt="Slide 3">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
@@ -112,12 +115,12 @@
                 <!-- Carrousel 3 -->
                 <div id="painting"
                     class="art fade-left text-center col-12 col-md-6 m-auto my-5 d-none d-md-inline-block">
-                    <img class="w-75" src="../img/art15.png" alt="Squidward's painting">
+                    <img class="w-75" src="img/art15.png" alt="Squidward's painting">
                 </div>
 
                 <!-- Smartphones 2 -->
                 <figure class="artsm fade-left text-center col-11 m-auto d-sm-block d-md-none my-5 rounded-3 py-3">
-                    <img class="w-50 rounded-2" src="../img/art15.5.jpg" alt="Patrick">
+                    <img class="w-50 rounded-2" src="img/art15.5.jpg" alt="Patrick">
                     <figcaption class="h3 fst-italic mt-3">Bold and Brash</figcaption>
                 </figure>
 
@@ -140,22 +143,22 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="../img/art9.jpg" class="d-block w-100 rounded-3" alt="image 1">
+                            <img src="img/art9.jpg" class="d-block w-100 rounded-3" alt="image 1">
                         </div>
                         <div class="carousel-item" data-bs-interval="10000">
-                            <img src="../img/art10.jpg" class="d-block w-100 rounded-3" alt="image 2">
+                            <img src="img/art10.jpg" class="d-block w-100 rounded-3" alt="image 2">
                         </div>
                         <div class="carousel-item" data-bs-interval="10000">
-                            <img src="../img/art11.jpg" class="d-block w-100 rounded-3" alt="image 3">
+                            <img src="img/art11.jpg" class="d-block w-100 rounded-3" alt="image 3">
                         </div>
                         <div class="carousel-item" data-bs-interval="10000">
-                            <img src="../img/art12.jpg" class="d-block w-100 rounded-3" alt="image 4">
+                            <img src="img/art12.jpg" class="d-block w-100 rounded-3" alt="image 4">
                         </div>
                         <div class="carousel-item" data-bs-interval="10000">
-                            <img src="../img/art13.jpg" class="d-block w-100 rounded-3" alt="image 5">
+                            <img src="img/art13.jpg" class="d-block w-100 rounded-3" alt="image 5">
                         </div>
                         <div class="carousel-item" data-bs-interval="10000">
-                            <img src="../img/art14.jpg" class="d-block w-100 rounded-3" alt="image 6">
+                            <img src="img/art14.jpg" class="d-block w-100 rounded-3" alt="image 6">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
@@ -185,13 +188,13 @@
             <div class="footer-block links">
                 <h5>Enlaces</h5>
                 <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="personajes.html">Personajes</a></li>
-                    <li><a href="episodios.html">Episodios</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="recetas.html">Recetas</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="simondice.html">Simon dice</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="html/personajes.html">Personajes</a></li>
+                    <li><a href="html/episodios.html">Episodios</a></li>
+                    <li><a href="html/galeria.html">Galería</a></li>
+                    <li><a href="html/recetas.html">Recetas</a></li>
+                    <li><a href="html/contacto.html">Contacto</a></li>
+                    <li><a href="html/simondice.html">Simon dice</a></li>
                 </ul>
             </div>
 
