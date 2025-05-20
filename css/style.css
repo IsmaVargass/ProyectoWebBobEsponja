@@ -135,6 +135,13 @@ body {
   opacity: 0;
 }
 
+#logo2 {
+  filter: drop-shadow(0 0 12px var(--azul));
+  max-width: 100%;
+  height: auto;
+  opacity: 1;
+}
+
 .arenita {
   width: 20% !important;
   justify-content: center;
