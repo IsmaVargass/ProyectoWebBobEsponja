@@ -48,4 +48,5 @@ Repositorio oficial de un **fan site** ambientado en Fondo de Bikini, construido
 
 ---
 
+🔗 **Explora la Web:** [Web de Bob Esponja](https://ismavargass.github.io/ProyectoWebBobEsponja/)  
 
