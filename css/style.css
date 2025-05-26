@@ -201,6 +201,8 @@ body {
   border: none;
   cursor: pointer;
   transition: all 250ms;
+  
+
  
   align-items: center;
   gap: 0.5rem;

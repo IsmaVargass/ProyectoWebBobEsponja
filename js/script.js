@@ -101,3 +101,20 @@ punto.forEach((cadaPunto, i) => {
   })
 })
 
+// Confirmar abrir ventana a otro sitio web
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Selecciona todos los enlaces que abren en nueva pestaña
+  document.querySelectorAll('a[target="_blank"]').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault(); // evita que abra inmediatamente
+      const mensaje = 'Se va abrir una nueva pestaña ¿Deseas continuar?';
+      if (confirm(mensaje)) {
+        // si el usuario acepta, abrimos la URL en nueva pestaña
+        window.open(link.href, '_blank');
+      }
+      // si cancela, no hacemos nada
+    });
+  });
+});
+
